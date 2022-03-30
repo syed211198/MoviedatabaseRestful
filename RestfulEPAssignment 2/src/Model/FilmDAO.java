@@ -13,8 +13,8 @@ public class FilmDAO {
 	ResultSet rs1 = null;
 	PreparedStatement ps = null;
 	String database = "films";
-	String user = "amjads";
-	String password = "wrequinF9";
+	String user = "********";
+	String password = "******";
 	// Note none default port used, 6306 not 3306
 	String url = "jdbc:mysql://mudfoot.doc.stu.mmu.ac.uk:6306/" + user;
 
@@ -33,7 +33,7 @@ public class FilmDAO {
 		try {
 			// connection string for demos database, username demos, password demos
 			conn = DriverManager
-					.getConnection("jdbc:mysql://mudfoot.doc.stu.mmu.ac.uk:6306/amjads?user=amjads&password=wrequinF9");
+					.getConnection("jdbc:mysql://mudfoot.doc.stu.mmu.ac.uk:6306/********?user=********&password=*******");
 			stmt = conn.createStatement();
 		} catch (SQLException se) {
 			System.out.println(se);
